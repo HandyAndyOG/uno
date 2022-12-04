@@ -1,0 +1,218 @@
+.container{
+  padding: 1em;
+  display: grid;
+  height: 100vh;
+  grid-template: repeat(3,1fr) / repeat(4,1fr);
+  grid-template-rows: 15% 8% 30% auto;
+  grid-template-areas: "players players players players"
+                       " . current current ."
+                       "endBtn center center uno"
+                       "active active active active";
+  grid-gap:20px;                    
+}
+
+
+.green {
+  background: radial-gradient(#FFF, #FFF,#00AA00);
+}
+.red {
+  background: radial-gradient(#FFF, #FFF,#FF5555);
+}
+.blue{
+  background: radial-gradient(#FFF, #FFF,#5555FF); 
+}
+.yellow{
+  background: radial-gradient(#FFF, #FFF,#FFAA00); 
+}
+
+
+.upper__cards{
+  grid-area: players;
+}
+
+.card__hand--active {
+  grid-area: active;
+}
+
+.player__hand--container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-right: 5rem;
+  /* margin-left:10rem */
+}
+
+.card__hand__top{
+  display: flex;
+}
+
+.players .player__name {
+  margin-left:-1rem;
+}
+
+.card__hand--active .player__name{
+  margin-left: -1rem;
+}
+
+.players{
+  margin-left: 12rem;
+  width: 200px;
+}
+
+
+.player1{
+  position: relative;
+  text-align: center;
+  grid-area:player1;
+  color: black;
+  font-size: 1rem;
+}
+
+.player2{
+  position: relative;
+  text-align: center;
+  grid-area:player2;
+  color: black;
+  font-size: 1rem;
+}
+
+.player3{
+  text-align: center;
+  grid-area:player3;
+  color: black;
+  font-size: 1rem;
+}
+
+.player4{
+  text-align: center;
+  grid-area:player4;
+  color: black;
+  font-size: 1rem;
+}
+
+.center__table{
+  margin-left:-15rem;
+  display: flex;
+  grid-area: center;
+  justify-content: center;
+}
+
+.section__deck{
+  grid-area: deck;
+  display: flex;
+  justify-content: center;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.section__table{
+  grid-area:table;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.current__player{
+  text-align: center;
+  grid-area: current;
+  margin-left:-13rem
+}
+
+.current__player{
+  font-size: 2.5rem;
+  max-height: 60px;
+}
+
+.player__name{
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  margin-left: 8rem;
+}
+
+.leave__btn__room{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  grid-area: endBtn;
+}
+
+.leave__btn__room svg {
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.leave__btn__room svg:hover {
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  transform: scale(0.9);
+}
+
+svg {
+  margin-right: -5rem;
+  width: 120px;
+  height: auto;
+  will-change: transform;
+  transition: transform 450ms;
+}
+svg:hover{
+  transition: transform 125ms;
+  transform: translate3d(-5px, -10px,10px);
+}
+
+.uno-back svg {
+  width: 50px;
+  cursor:auto;
+}
+
+.uno-back svg:hover {
+  transition: none;
+  transform: none;
+}
+
+.section__deck svg{
+  margin-right: 0;
+  width: 150px;
+}
+
+.section__table svg{
+  margin-right: 0;
+  width: 150px;
+}
+
+.unoBtn{
+  grid-area: uno;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.unoBtn svg{
+  margin-left: -22rem;
+  transition: all .2s ease-in-out;
+}
+
+.unoBtn svg:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card__hand--container {
+  display: flex;
+  flex-flow: row wrap;
+  height: 220px;
+  gap: 3.5rem;
+  justify-content: center;
+  overflow-x: scroll;
+  padding-right:5rem;
+  padding-top: 0.7rem;
+  scrollbar-color: red; 
+  /* border-style: solid; */;
+}
+
+.card__hand {
+  cursor: pointer;
+}

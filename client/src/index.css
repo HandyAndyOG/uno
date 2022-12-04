@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+}
+
+.main{
+  margin-top: -5.8rem;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  z-index: 1;
+}
+
+.main__home{
+  margin-top: -5.8rem;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(255,246,245,1) 29%, rgb(255, 137, 119) 100%);
+}

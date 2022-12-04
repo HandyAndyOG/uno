@@ -1,0 +1,24 @@
+.btn__table{
+  background-color: green;
+  color: white;
+  width: 150px;
+  height: 224px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 3rem;
+}
+.btn__table:hover{
+  background-color: #00AA00;
+  color: #000;
+}
+
+.playing__deck svg {
+    width: 50px;
+    cursor:auto;
+  }
+
+.playing__deck svg:hover {
+    transition: none;
+    transform: none;
+}
