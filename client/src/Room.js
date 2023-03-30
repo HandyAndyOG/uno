@@ -123,9 +123,7 @@ const Room = () => {
       });
     }
   };
-  console.log(userDataList, 'user data list')
-console.log(deck, 'here is deck')
-console.log(playingDeck, 'here is playing deck')
+
   useEffect(() => {
     const winner = userDataList.find((cards) => cards.cards.length === 0);
     setShowModal(false);
